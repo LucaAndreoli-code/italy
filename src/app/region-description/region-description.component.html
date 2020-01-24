@@ -1,0 +1,47 @@
+<button mat-icon-button (click)="goHome()">
+  <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+</button>
+<div class="qr">
+  <qr-code value="'https://www.google.com/maps/place/{{regione.capitale}}'" [size]="125"></qr-code>
+  <p class="text-qr">Scannerizza il</p>
+  <p class="text-qr">QR code per raggiungere</p>
+  <p class="text-qr">il capoluogo</p>
+</div>
+<div class="everything">
+  <div class="region-card">
+    <mat-card class="card">
+      <mat-card-content>
+        <mat-card-title>{{regione.name | uppercase}}</mat-card-title>
+        <mat-divider></mat-divider>
+        <br>
+        <h3>Capoluogo: {{regione.capitale}}</h3>
+        <h4> <i class="material-icons">
+          location_city
+          </i>Province:</h4> {{regione.capoluoghi}} <br><br> {{regione.province}}<br>
+        <h4><i class="material-icons">
+          local_dining
+          </i>Piatto tipico:</h4>{{regione.piatto}}<br>
+        <a href="https://www.giallozafferano.it/ricerca-ricette/{{regione.capitale}}" target="_blank"><button
+            mat-button>
+            Ricette locali
+          </button></a>
+        <br>
+        <h4><i class="material-icons">
+          flight
+          </i>Escursione:</h4> {{regione.escursioni}}<br>
+        <h4>Descrizione:</h4> {{regione.descrizione}}<br>
+        <div>
+          <br><img class="immagine" src={{regione.img[0]}} width="100%"><br>
+          <br><img class="immagine" src={{regione.img[1]}} width="100%">
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <mat-card class="region-cards" *ngFor="let region of regionsList">
+    <mat-card-content>
+      <mat-card-title (click)="changeSelectedRegion(region.name)">
+        <p>{{region.name}}</p>
+      </mat-card-title>
+    </mat-card-content>
+  </mat-card>
+</div>

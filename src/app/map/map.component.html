@@ -1,0 +1,38 @@
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+<div *ngIf="time.getHours() == 7">
+  <audio autoplay id="oraesatta" allow="autoplay" src="../assets/mp3/oraesatta.mp3" type="audio/mp3">
+  </audio>
+</div>
+<h1 onclick="document.getElementById('oraesatta').pause()">SCOPRI L'ITALIA <audio id="audio"
+    src="../assets/mp3/inno.mp3"></audio>
+  <img class="logo" src="../assets/img/bandieraita.png" onclick="document.getElementById('audio').play();">
+</h1>
+<mat-form-field class="my-form">
+  <input class="colore" matInput formControlName="regione" type='string' placeholder="Inserisci il nome di una regione"
+    (keyup)="onKey($event)">
+</mat-form-field>
+<div>
+  <img class="gif" onclick="document.getElementById('audio').pause() " src="assets/img/giphy.gif">
+</div>
+<div class="button-wrapper">
+  <button mat-button class="button-action button-pos" (click)="changeMapStylePrevious()" block>
+    <mat-icon aria-hidden="false" aria-label="Example home icon">
+      keyboard_arrow_left
+    </mat-icon>
+  </button>
+  <button mat-button class="button-action1 button-pos" (click)="randomMapStyle()" block>
+    Random
+  </button>
+  <button mat-button class="button-action2 button-pos" (click)="changeMapStyleNext()" block>
+    <mat-icon aria-hidden="false" aria-label="Example home icon">keyboard_arrow_right
+    </mat-icon>
+  </button>
+  <div>
+  </div>
+</div>
+<div class="map-container">
+  <div class="map-frame">
+    <div id="map">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,105 @@
+h1{
+  color: #a7ceb0;
+  text-indent: 200px;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 50px; 
+}
+.map-container {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    margin-left: 50%;
+    margin-right: 3%;
+    text-align: center;
+  }
+  .map-frame {
+    border: solid transparent ;
+    height: 100%;
+  }
+  #map {
+    top: auto;
+    box-sizing:auto;
+    height: 95%;
+    border-radius: 10px;
+  }
+
+
+  .mat-form-field{
+    width: 700px;
+    text-align: center;
+    align-content: center;
+    color: #a7ceb0;
+    padding-bottom: 1.25em;
+    margin-left: 35px;
+  }
+
+div.mat-form-field-appearance-legacy div.mat-form-field-wrapper {
+  padding-bottom: 1.25em;
+  color: #a7ceb0;
+}
+.mat-form-field-flex{
+  padding-bottom: 1.25em;
+  color: #a7ceb0;
+}
+
+input.cdk-text-field-autofill-monitored::placeholder {
+  color: #a7ceb0;
+}
+
+.mat-form-field[_ngcontent-ksa-c1] {
+ width: 500px !important;
+  text-align: center;
+}
+img.logo{
+  position: absolute;
+  margin-left: 40px;
+}
+
+img.gif {
+    width: 23%;
+    height: 23%;
+    margin-left: 14.5%;
+}
+.leaflet-bottom{
+  margin-bottom: 30px;
+}
+
+.button-action{
+  background-color: #00BB2B;
+  opacity: 0.6;
+  margin: 5px;
+}
+.button-action1{
+  background-color: whitesmoke;
+  opacity: 0.6;
+  margin: 5px;
+}
+.button-action2{
+  background-color:#cb3234;
+  opacity: 0.6;
+  margin: 5px;
+}
+.button-pos{
+  margin-left: 8.5%;
+  margin-top: 80px;
+}
+::ng-deep .mat-focused .mat-form-field-label {
+  color: #a7ceb0 !important; 
+ }
+
+ ::ng-deep.mat-form-field-underline {
+
+  background-color: #a7ceb0 !important; 
+} 
+::ng-deep.mat-form-field-ripple {
+
+ background-color: #a7ceb0 !important; 
+}
+::ng-deep.ng-tns-c2-0 .ng-star-inserted{
+  color: #a7ceb0 !important; 
+}
+
